@@ -1,0 +1,4 @@
+---The Domain Layer---
+-Contains UseCases,
+-Domain Objects/Models (Pojos/Kotlin Data Classes),
+-and Repository Interfaces

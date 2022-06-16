@@ -1,0 +1,13 @@
+--The Presentation Layer--
+
+-This includes our Activities,
+-Fragments,
+-and ViewModels.
+
+An Activity should be as dumb as possible. Never put your business logic in Activities.
+
+-Contains UI,
+-View Objects,
+-Android components, etc.
+
+Can be split into separate modules itself if needed. For example, we could have a module called Device handling things like camera, location, etc.

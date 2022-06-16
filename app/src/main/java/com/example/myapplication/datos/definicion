@@ -1,0 +1,6 @@
+--The Data Layer--
+
+-Contains Local Storage,
+-APIs,
+-Data objects (Request/Response object, DB objects),
+-and the repository implementation.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoApp"
+    tools:context=".presenter.views.usuarios.ListUsers"
+    android:padding="20dp">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/country_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        app:iconifiedByDefault="false"
+        app:queryHint="Mrs. Dennis"
+        app:queryBackground="@null"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/etUsers"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="textPersonName"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_search" />
+
+</RelativeLayout>

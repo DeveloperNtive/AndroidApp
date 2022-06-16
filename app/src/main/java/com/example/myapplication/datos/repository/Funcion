@@ -1,0 +1,1 @@
+Esta seccion remota se va a encargar de obtener datos desde dentro de la app (SharedPreferences, room, SQLite, etc...)

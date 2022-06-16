@@ -1,0 +1,1 @@
+Use Cases: Single purpose interactors. This is where we will perform our business logic, and also how the presentation layer will receive its data.
