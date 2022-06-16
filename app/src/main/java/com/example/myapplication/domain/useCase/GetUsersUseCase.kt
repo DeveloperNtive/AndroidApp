@@ -16,8 +16,4 @@ class GetUsersUseCase @Inject constructor(
         return repository.getAllUsersFromDatabase().user
 //        return users
     }
-
-    fun databseInfo(): List<User>{
-        return repository.getAllUsersFromDatabase().user
-    }
 }
