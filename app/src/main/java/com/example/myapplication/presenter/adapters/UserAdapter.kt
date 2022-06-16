@@ -35,15 +35,16 @@ class UserAdapter(private val userList: List<User>, private val postList: List<P
         holder.subItem.visibility = if (expanded) View.VISIBLE else View.GONE
 
         holder.recyclePost.layoutManager = LinearLayoutManager(holder.itemView.context)
-        holder.recyclePost.setHasFixedSize(true)
+        holder.recyclePost.setHasFixedSize(false)
 
-        holder.btnVerPublicaciones.setOnClickListener(View.OnClickListener {
-            val filteredList: List<Posts> = postList.filter { it.userId == userListFiltered[position].id }
+        holder.btnVerPublicaciones.setOnClickListener {
+            val filteredList: List<Posts> =
+                postList.filter { it.userId == userListFiltered[position].id }
             holder.recyclePost.adapter = PostAdapter(filteredList)
             userListFiltered[position].isExpanded = !expanded
             notifyItemChanged(holder.adapterPosition)
             Log.d("Expanded", userListFiltered[0].isExpanded.toString())
-        })
+        }
     }
 
     override fun getItemCount(): Int = userListFiltered.size
