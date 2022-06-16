@@ -4,7 +4,6 @@ import androidx.room.TypeConverter
 import com.example.myapplication.domain.model.user.api.Address
 import com.example.myapplication.domain.model.user.api.Company
 import com.example.myapplication.domain.model.user.api.User
-import com.example.myapplication.domain.model.user.api.UsersResponse
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 

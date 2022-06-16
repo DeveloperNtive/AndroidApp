@@ -1,4 +1,4 @@
-package com.example.myapplication.datos.repository
+package com.example.myapplication.datos.repository.user
 
 import com.example.myapplication.datos.remote.UserService
 import com.example.myapplication.domain.database.dao.UserDao
@@ -18,13 +18,13 @@ class UserRepository @Inject constructor(
     }
 
     //Insertar usuarios en base de datos
-    suspend fun insertUsers(users: UsersEntity) {//Se manejara el mismo modelo de datos
+    fun insertUsers(users: UsersEntity) {//Se manejara el mismo modelo de datos
         userDao.insertUsers(users)
     }
 
 
     //    Obtener usuarios desde base de datos
-    suspend fun getAllUsersFromDatabase(): UsersEntity {//Se manejara el mismo modelo de datos
+    fun getAllUsersFromDatabase(): UsersEntity {//Se manejara el mismo modelo de datos
         return userDao.getUsers()
     }
 
